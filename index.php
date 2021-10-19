@@ -26,5 +26,10 @@ Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squ
             "puntiCasa" => 50,
             "puntiOspite" => 10
         ]
-    ]
+    ];
+
+    // 2) Stampo a schermo tutte le partite
+    for ($i = 0; $i<count($partite); $i++){
+        echo $partite[$i]["squadraCasa"] . "-" . $partite[$i]["squadraOspite"] . " " . "|" . " " . $partite[$i]["puntiCasa"] . "-" . $partite[$i]["puntiOspite"] . "<br>";
+    }
 ?>
